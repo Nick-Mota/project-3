@@ -84,3 +84,28 @@
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
 }
+
+.selection-img{
+  height: 250px;
+  width: 350px;
+}
+
+.section__selection{
+  display: flex;
+  flex-direction: column;
+  background-color: lightgrey;
+}
+
+.section__selection-box{
+  display: flex;
+  flex-direction: column;
+}
+
+.section__card{
+  color: black;
+  background-color: white;
+  padding: 3px;
+  border-radius: 17px;
+  margin: 10px 3px 10px 3px;
+  box-shadow: 5px 4px 6px 3px #e8e7e7;
+}
