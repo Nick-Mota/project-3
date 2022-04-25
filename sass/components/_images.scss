@@ -1,0 +1,17 @@
+.logo{
+
+  &__img{
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+.homepage{
+  &__img{
+    height: 210px;
+    width: 400px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+  }
+}

@@ -1,0 +1,18 @@
+*{
+  list-style: none;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  margin: 0px; 
+  padding: 0px;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  &:visited,
+  &:hover,
+  &:active {
+      color: inherit
+  }
+}

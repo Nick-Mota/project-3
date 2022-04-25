@@ -1,0 +1,43 @@
+.homepage{
+  &__card{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 7px;
+    border-radius: 30px;
+    width: 100%;
+    margin: 20px 0 25px 0;
+    color: black;
+    justify-content: space-between;
+  }
+}
+
+.howbox{
+  &__card{
+    background-color: #f2f2f2;
+    padding: 10px;
+    width: 75%;
+    border-radius: 25px;
+    margin: 0px 32px 25px 35px;
+    justify-content: space-evenly;
+  }
+}
+
+
+
+.menu{
+  &__card {
+    border-radius: $card-radius;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 7px;
+    border-radius: 30px;
+    width: 100%;
+    margin: 20px 0 25px 0;
+    color: black;
+    justify-content: space-between;
+}
+}
