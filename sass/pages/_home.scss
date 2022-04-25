@@ -1,5 +1,14 @@
-.homepage{
+.howbox{
+  &__text {
+    display: inline-block;
+    white-space: nowrap;
+    width: 70%;
+    outline: 1px solid red;
+  }
+}
 
+
+.homepage{
   &__wrap {
     display: flex;
     flex-direction: column;
@@ -7,12 +16,9 @@
     flex-wrap: wrap;
   }
 
-  &__card {
-    color: black;
-    background-color: white;
-    padding: 3px;
-    border-radius: 17px;
+  &__text{
+    display: inline-block;
+    white-space: nowrap;
+    width: 70%;
   }
-
-  
 }
