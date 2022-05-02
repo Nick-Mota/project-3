@@ -15,3 +15,11 @@
     border-top-right-radius: 25px;
   }
 }
+
+.banner{
+  &__img{
+    height: 210px;
+    width: 400px;
+    object-fit: cover;
+  }
+}
