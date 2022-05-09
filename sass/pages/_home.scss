@@ -3,12 +3,12 @@
     display: inline-block;
     white-space: nowrap;
     width: 70%;
-    outline: 1px solid red;
   }
 }
 
 
 .homepage{
+
   &__wrap {
     display: flex;
     flex-direction: column;
