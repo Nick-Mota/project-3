@@ -17,11 +17,11 @@ a:visited, a:hover, a:active {
   color: inherit;
 }
 
-.bookbox__btn {
+.selection__btn {
   border-radius: 25px;
   color: white;
   padding: 15px;
-  background-image: linear-gradient(45deg, #9356DC, #FF79DA);
+  background-image: linear-gradient(-4deg, #9356DC, #FF79DA);
 }
 
 .logo__img {
@@ -30,19 +30,79 @@ a:visited, a:hover, a:active {
   display: block;
 }
 
-.homepage__img {
-  height: 211px;
-  width: 417px;
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
-  margin: -8px -7px 0 -7px;
-}
-
 .banner__img {
   height: 210px;
   width: 400px;
-  -o-object-fit: cover;
-     object-fit: cover;
+}
+
+.howbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  justify-items: center;
+}
+
+.howbox__card {
+  background-color: #f2f2f2;
+  padding: 10px;
+  width: 75%;
+  border-radius: 25px;
+  margin: 0px 32px 25px 35px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  white-space: nowrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.howbox__text {
+  display: inline-block;
+  white-space: nowrap;
+  width: 70%;
+}
+
+.howbox__numholder {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin-left: -30px;
+  -webkit-transition: all 3000ms;
+  transition: all 3000ms;
+  background-color: lightblue;
+  color: black;
+  transition: all 3000ms;
+}
+
+.howbox__icon {
+  display: inline-block;
+  width: 20%;
+  background-color: lightblue;
+  color: black;
 }
 
 .bookbox {
@@ -84,7 +144,19 @@ a:visited, a:hover, a:active {
   align-items: center;
 }
 
-.howbox {
+.bookbox__city--icon {
+  padding-right: 15px;
+}
+
+.bookbox__btn {
+  border-radius: 25px;
+  color: white;
+  padding: 15px;
+  background-image: linear-gradient(-4deg, #9356DC, #FF79DA);
+}
+
+.navigation {
+  background-color: lightgray;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -92,6 +164,9 @@ a:visited, a:hover, a:active {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -99,19 +174,10 @@ a:visited, a:hover, a:active {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   justify-items: center;
+  align-items: center;
 }
 
-.homepage {
-  background-color: lightgray;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.menu__selection {
+.navigation__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -119,19 +185,14 @@ a:visited, a:hover, a:active {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: lightgrey;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.homepage {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.homepage__card {
+.navigation__card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -152,8 +213,24 @@ a:visited, a:hover, a:active {
       align-self: center;
 }
 
-.howbox__card {
-  background-color: #f2f2f2;
+.navigation__img {
+  height: 211px;
+  width: 417px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  margin: -8px -7px 0 -7px;
+}
+
+.navigation__text {
+  display: inline-block;
+  white-space: nowrap;
+  width: 70%;
+}
+
+.menu__card {
+  border-radius: 30px;
+  cursor: pointer;
+  background-color: red;
   padding: 10px;
   width: 75%;
   border-radius: 25px;
@@ -165,34 +242,15 @@ a:visited, a:hover, a:active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.menu__card {
-  border-radius: 30px;
-  position: relative;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background-color: white;
-  padding: 7px;
-  border-radius: 30px;
-  width: 100%;
-  margin: 20px 0 25px 0;
-  color: black;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.logo {
+  margin-right: auto;
+  margin-bottom: auto;
+  width: 85px;
+  height: 85px;
 }
 /*# sourceMappingURL=main.css.map */

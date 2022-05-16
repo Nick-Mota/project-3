@@ -1,0 +1,45 @@
+.navigation{
+  background-color: lightgray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-items: center;
+
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  &__card{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 7px;
+    border-radius: 30px;
+    width: 100%;
+    margin: 20px 0 25px 0;
+    color: black;
+    justify-content: space-between;
+    align-self: center;
+  }
+
+  &__img{
+    height: 211px;
+    width: 417px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    margin: -8px -7px 0 -7px;
+  }
+
+  &__text{
+    display: inline-block;
+    white-space: nowrap;
+    width: 70%;
+  }
+  
+}

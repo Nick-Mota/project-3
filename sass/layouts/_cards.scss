@@ -1,24 +1,42 @@
-.homepage{
-  display: flex;
-  justify-content: center;
+// .homepage{
+//   display: flex;
+//   justify-content: center;
 
-  &__card{
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    padding: 7px;
-    border-radius: 30px;
-    width: 100%;
-    margin: 20px 0 25px 0;
-    color: black;
-    justify-content: space-between;
-    align-self: center;
-  }
-}
+//   &__card{
+//     display: flex;
+//     flex-direction: column;
+//     background-color: white;
+//     padding: 7px;
+//     border-radius: 30px;
+//     width: 100%;
+//     margin: 20px 0 25px 0;
+//     color: black;
+//     justify-content: space-between;
+//     align-self: center;
+//   }
+// }
 
-.howbox{
-  &__card{
-    background-color: #f2f2f2;
+// .howbox{
+//   &__card{
+//     background-color: #f2f2f2;
+//     padding: 10px;
+//     width: 75%;
+//     border-radius: 25px;
+//     margin: 0px 32px 25px 35px;
+//     justify-content: space-evenly;
+//     white-space: nowrap;
+//     display: flex;
+//     align-items: center;
+//   }
+// }
+
+
+
+.menu{
+  &__card {
+    border-radius: $card-radius;
+    cursor: pointer;
+    background-color: red;
     padding: 10px;
     width: 75%;
     border-radius: 25px;
@@ -26,26 +44,6 @@
     justify-content: space-evenly;
     white-space: nowrap;
     display: flex;
-    flex-direction: column;
     align-items: center;
-  }
-}
-
-
-
-.menu{
-  &__card {
-    border-radius: $card-radius;
-    position: relative;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    padding: 7px;
-    border-radius: 30px;
-    width: 100%;
-    margin: 20px 0 25px 0;
-    color: black;
-    justify-content: space-between;
 }
 }

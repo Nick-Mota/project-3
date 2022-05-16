@@ -19,29 +19,23 @@
     align-items: center;
   }
 
-}
+  &__city--icon{
+    padding-right: 15px;
+  }
 
-.howbox{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  justify-items: center;
-}
-
-.homepage{
-background-color: lightgray;
-display: flex;
-justify-content: center;
-}
-
-
-
-.menu{
-  &__selection{
-    display: flex;
-    flex-direction: column;
-    background-color: lightgrey;
+  &__btn{
+    border-radius: 25px;
+    color: white;
+    padding: 15px;
+    background-image: linear-gradient(-4deg, $Primary, $Secondary);
   }
 
 }
+
+// .howbox{
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: space-evenly;
+//   justify-items: center;
+// }
