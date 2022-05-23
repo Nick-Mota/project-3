@@ -42,4 +42,28 @@
     width: 70%;
   }
   
+  &__target {
+  position: absolute;
+  bottom: -15%;
+  right: 5.5%;
+  font-size: 1.5rem;
+}
+
+&__outline {
+  position: absolute;
+  opacity: 100%;
+  transition: opacity 3000ms;
+}
+
+&__new {
+  position: absolute;
+  bottom: 16%;
+  left: 85.5%;
+  margin: 0;
+  padding: 2px 5px;
+  background-color: teal;
+}
+
+
+  
 }
