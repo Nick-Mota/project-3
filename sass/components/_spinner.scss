@@ -1,3 +1,17 @@
+// .loader{
+//   position: fixed;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   width: 100vw;
+//   height: 100vh;
+//   opacity: 0.9;
+//   top: 0;
+//   left: 0;
+//   background-image: linear-gradient(104deg, $Primary, $Secondary, $Tertiary);
+//   z-index: -100;
+// }
+
 .spinner{
   width: 100px;
   height: 100px;
@@ -9,15 +23,46 @@
     top: 0;
     height: 50px;
     width: 50px;
+    border-radius: 15%;
     background-image: linear-gradient(-4deg, $Primary, $Secondary);
-    animation: flip 2s linear infinite;
+    animation: flip 2s linear 4s infinite;
     transform-origin: right bottom;
   }
   &__square:nth-child(2) {
-    animation-delay: 1s;
+    animation-delay: .6s;
+    border-radius: 50%;
+    opacity: 0.9;
+    background: $Primary;
+  }
+
+  &__square:nth-child(3) {
+    animation-delay: .2s;
+    opacity: 0.7;
+    background: $Secondary;
+  }
+
+  &__square:nth-child(4) {
+    animation-delay: .7s;
+    opacity: 0.7;
+    border-radius: 50%;
+    background: $Tertiary;
+  }
+
+  &__square:nth-child(5) {
+    animation-delay: .9s;
     opacity: 0.5;
+    background: $Primary;
+  }
+
+  &__square:nth-child(6) {
+    animation-delay: 1.1s;
+    opacity: 0.5;
+    border-radius: 50%;
+    background: $Secondary;
   }
 }
+
+
 
 @keyframes flip {
   0% { transform: rotateX(0) rotateY(0); }
@@ -25,5 +70,16 @@
   50% { transform: rotateX(180deg) rotateY(180deg); }
   75% { transform: rotateX(180deg) rotateY(0deg); }
   100% { transform: rotateX(0) rotateY(0); }
+}
+
+@keyframes load {
+  0%{
+    z-index: 100;
+    opacity: 1;
+  }
+  100%{
+    z-index: -10;
+    opacity: 0;
+  }
 }
 

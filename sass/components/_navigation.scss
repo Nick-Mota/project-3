@@ -19,6 +19,7 @@
     display: flex;
     flex-direction: column;
     background-color: white;
+    position: relative;
     padding: 7px;
     border-radius: 30px;
     width: 100%;
@@ -42,28 +43,65 @@
     width: 70%;
   }
   
-  &__target {
-  position: absolute;
-  bottom: -15%;
-  right: 5.5%;
-  font-size: 1.5rem;
-}
+    &__target {
+    position: absolute;
+    top: 85%;
+    right: 8.5%;
+    font-size: 1.5rem;
+  }
 
-&__outline {
-  position: absolute;
-  opacity: 100%;
-  transition: opacity 3000ms;
-}
+  &__new {
+    position: absolute;
+    top: 9%;
+    left: 85.5%;
+    margin: 0;
+    padding: 2px 5px;
+    background-color: $Tertiary;
+  }
 
-&__new {
-  position: absolute;
-  bottom: 16%;
-  left: 85.5%;
-  margin: 0;
-  padding: 2px 5px;
-  background-color: teal;
-}
+  &__outline {
+    position: absolute;
+    opacity: 100%;
+    transition: opacity 3000ms;
+  }
 
+  &__outline:hover{
+    opacity: 0;
+    transition: opacity 3000ms; 
+  }
 
+  &__outline:hover::after{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    content: '';
+    border-radius: 50%;
+    transition: background-color 5s;
+  }
+
+  &__solid {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 3000ms;
+    position: absolute;
+    background: linear-gradient(104deg, $Primary, $Secondary, $Tertiary);
+  }
+
+  &__solid:hover {
+    opacity: 100%;
+    transition: opacity 3000ms; 
+    background: linear-gradient(104deg, $Primary, $Secondary, $Tertiary); 
+  }
+
+  &__solid:hover::after{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    content: '';
+    border-radius: 50%;
+    transition: background-color 5s;
+    background: linear-gradient(104deg, $Primary, $Secondary, $Tertiary);
+    color: linear-gradient(104deg, $Primary, $Secondary, $Tertiary);
+  }
   
 }
